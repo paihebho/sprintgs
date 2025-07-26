@@ -14,6 +14,7 @@ import {
   ArrowRight,
   Phone,
 } from "lucide-react";
+import Image from "next/image";
 
 // Service data array for cleaner code and easier updates
 const services = [
@@ -192,7 +193,7 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="relative h-96 w-full rounded-2xl overflow-hidden shadow-2xl min-h-[400px]">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=3870&auto=format&fit=crop"
                 alt="Heavy construction machinery at a Sprint G.S. supply site"
                 className="object-cover w-full h-full"
@@ -208,7 +209,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-6">
           <div className="bg-gradient-to-br from-blue-800 to-slate-900 text-white p-8 md:p-16 rounded-3xl text-center shadow-2xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Discuss Your Project&aposs Needs
+              Discuss Your Project&apos;s Needs
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-slate-300 mb-8">
               Whether you require materials, logistics, or expert consultation,

@@ -15,7 +15,7 @@ import {
 const title = "Transport & Logistics";
 const subtitle = "Streamlined Solutions for Nigerian Commerce";
 const description =
-  "At Sprint G. S. Limited, we redefine logistics with fast, seamless solutions built on commitment, flexibility, and trust. Our personalized approach ensures your business&aposs success is at the forefront of our operations.";
+  "At Sprint G. S. Limited, we redefine logistics with fast, seamless solutions built on commitment, flexibility, and trust. Our personalized approach ensures your business&apos;s success is at the forefront of our operations.";
 
 const logisticsSections = [
   {

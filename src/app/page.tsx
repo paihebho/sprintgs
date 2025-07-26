@@ -1,12 +1,9 @@
 "use client";
 
-// CORRECTED: Used curly braces {} for named imports
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import {
   ArrowRight,
   Award,
-  Users,
   Star,
   Phone,
   Mail,
@@ -23,8 +20,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
-
-// NOTE: Make sure to place your logo file `logo_sprintgs.png` in the `/public` directory of your Next.js project.
 
 export default function HomePage() {
   const stats = [
@@ -85,35 +80,35 @@ export default function HomePage() {
     },
   ];
 
-  const testimonials = [
-    {
-      quote:
-        "Sprint G.S. transformed our vision into a landmark reality. Their professionalism and technical expertise are unmatched. They delivered a world-class facility ahead of schedule.",
-      author: "Michael Thompson",
-      position: "CEO, Global Infrastructure Ltd",
-      rating: 5,
-      project: "Marina Bay Complex",
-      value: "₦65B",
-    },
-    {
-      quote:
-        "Their international experience and local insights made our complex project seamless. The attention to detail and commitment to excellence from Sprint G.S. was truly remarkable.",
-      author: "Sarah Chen",
-      position: "Director, Urban Development Corp",
-      rating: 5,
-      project: "City Center Plaza",
-      value: "₦42B",
-    },
-    {
-      quote:
-        "Outstanding quality, on-time delivery, and exceptional project management. Sprint G.S. exceeded every expectation. They are our trusted partners for all major projects.",
-      author: "David Okafor",
-      position: "Principal, Landmark Properties",
-      rating: 5,
-      project: "Corporate Headquarters",
-      value: "₦90B",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     quote:
+  //       "Sprint G.S. transformed our vision into a landmark reality. Their professionalism and technical expertise are unmatched. They delivered a world-class facility ahead of schedule.",
+  //     author: "Michael Thompson",
+  //     position: "CEO, Global Infrastructure Ltd",
+  //     rating: 5,
+  //     project: "Marina Bay Complex",
+  //     value: "₦65B",
+  //   },
+  //   {
+  //     quote:
+  //       "Their international experience and local insights made our complex project seamless. The attention to detail and commitment to excellence from Sprint G.S. was truly remarkable.",
+  //     author: "Sarah Chen",
+  //     position: "Director, Urban Development Corp",
+  //     rating: 5,
+  //     project: "City Center Plaza",
+  //     value: "₦42B",
+  //   },
+  //   {
+  //     quote:
+  //       "Outstanding quality, on-time delivery, and exceptional project management. Sprint G.S. exceeded every expectation. They are our trusted partners for all major projects.",
+  //     author: "David Okafor",
+  //     position: "Principal, Landmark Properties",
+  //     rating: 5,
+  //     project: "Corporate Headquarters",
+  //     value: "₦90B",
+  //   },
+  // ];
 
   const capabilities = [
     { icon: <Zap className="w-5 h-5" />, label: "Rapid Deployment" },
@@ -301,7 +296,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
-                Building Tomorrow's
+                Building Tomorrow&apos;s
                 <br />
                 <span className="text-blue-800">Landmarks</span>
               </h2>
@@ -440,8 +435,8 @@ export default function HomePage() {
             <span className="text-blue-400">Next Project?</span>
           </h2>
           <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Let's discuss how we can bring your vision to life with our global
-            expertise, proven track record, and commitment to excellence.
+            Let&apos;s discuss how we can bring your vision to life with our
+            global expertise, proven track record, and commitment to excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link

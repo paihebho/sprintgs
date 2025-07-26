@@ -62,7 +62,7 @@ export default function ServiceLayout({
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-slate-300 mb-8">
               Let our experts provide the materials and support you need to
-              ensure your project&aposs success from the ground up.
+              ensure your project&apos;s success from the ground up.
             </p>
             <Link
               href="/contact"

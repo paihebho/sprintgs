@@ -2,10 +2,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
-// ... (interfaces remain the same)
 export interface ServiceSection {
   icon: React.ElementType;
   title: string;

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Linkedin, Twitter, Facebook } from "lucide-react";
 import { mainContact } from "@/types";
 
 // Assuming ALL_SERVICES is imported from your lib. Using placeholder data for demonstration.

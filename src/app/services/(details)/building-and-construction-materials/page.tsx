@@ -9,10 +9,7 @@ import {
   LayoutGrid,
   Layers,
   ShoppingBasket,
-  Building, // for gallery
 } from "lucide-react";
-
-// --- Data for this specific service page ---
 
 const title = "Building & Construction Materials";
 const subtitle = "Sourcing Quality Materials for Lasting Structures";

@@ -120,7 +120,7 @@ export default function AboutPage() {
                 From our incorporation in Nigeria in 2006 to becoming an
                 international construction powerhouse, our journey is defined by
                 a relentless pursuit of excellence. As specialists and investors
-                in our clients&apos success, we merge cutting-edge technology
+                in our clients&apos; success, we merge cutting-edge technology
                 with meticulous craftsmanship.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed">
@@ -241,7 +241,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-6">
           <div className="bg-gradient-to-br from-blue-800 to-slate-900 text-white p-8 md:p-16 rounded-3xl text-center shadow-2xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Let&aposs Build Something Great Together
+              Let&apos;s Build Something Great Together
             </h2>
             <p className="max-w-2xl mx-auto text-lg text-slate-300 mb-8">
               Have a project in mind? Our team of experts is ready to help you

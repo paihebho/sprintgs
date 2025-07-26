@@ -3,36 +3,6 @@
 import { mainContact } from "@/types";
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 
-// Data for contact items for easier mapping and maintenance
-const contactDetails = [
-  {
-    icon: <MapPin className="w-6 h-6 text-red-600" />,
-    title: "Our Office",
-    line1: "123 Sprint Avenue, Victoria Island,",
-    line2: "Lagos, Nigeria",
-  },
-  {
-    icon: <Mail className="w-6 h-6 text-blue-800" />,
-    title: "Email Us",
-    line1: (
-      <a href="mailto:info@sprintgs.com" className="hover:underline">
-        info@sprintgs.com
-      </a>
-    ),
-    line2: "For inquiries & project details",
-  },
-  {
-    icon: <Phone className="w-6 h-6 text-red-600" />,
-    title: "Call Us",
-    line1: (
-      <a href="tel:+2348012345678" className="hover:underline">
-        +234 (0) 80 1234 5678
-      </a>
-    ),
-    line2: "Speak with our expert team",
-  },
-];
-
 export default function ContactPage() {
   return (
     <div className="bg-slate-50 font-sans">
@@ -44,7 +14,7 @@ export default function ContactPage() {
 
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
-            Let&aposs Build Together
+            Let&apos;s Build Together
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300">
             Have a project in mind or a question for our team? We&aposre here to
