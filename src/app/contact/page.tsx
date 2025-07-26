@@ -44,10 +44,10 @@ export default function ContactPage() {
 
         <div className="relative container mx-auto px-6 text-center z-10">
           <h1 className="text-4xl md:text-6xl font-black mb-4 tracking-tight">
-            Let's Build Together
+            Let&aposs Build Together
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-slate-300">
-            Have a project in mind or a question for our team? We're here to
+            Have a project in mind or a question for our team? We&aposre here to
             help you get started.
           </p>
         </div>
