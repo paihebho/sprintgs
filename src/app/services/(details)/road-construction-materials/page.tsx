@@ -7,11 +7,10 @@ import {
   Layers,
   Droplets,
   ShieldCheck,
-  HardHat, // Added for gallery
-  Truck, // Added for gallery
+  HardHat,
+  Truck,
 } from "lucide-react";
 
-// The data for this specific service page, as you provided.
 const title = "Road Construction & Engineering";
 const subtitle = "Building Durable and Reliable Road Networks Across Nigeria";
 const description =
@@ -44,69 +43,74 @@ const serviceSections = [
   },
 ];
 
-// Data for the new gallery section
 const galleryItems = [
   {
     icon: HardHat,
     label: "Premium Aggregates",
-    image: "/images/aggregate.png", // Replace with actual image
+    image: "/images/aggregate.png",
   },
   {
     icon: Layers,
     label: "High-Grade Asphalt",
-    image: "/images/aspalt.png", // Replace with actual image
+    image: "/images/aspalt.png",
   },
   {
     icon: Truck,
     label: "Modern Paving Fleet",
-    image: "/images/fleet.png", // Replace with actual image
+    image: "/images/fleet.png",
   },
 ];
 
 export default function RoadConstructionPage() {
   return (
-    // This JSX represents the implementation of the "ServiceDetailPage" component
-    <div className="space-y-12 md:space-y-16">
+    <div className="space-y-10 md:space-y-14">
       {/* 1. Page Header */}
       <header>
-        <p className="mb-2 text-lg font-semibold text-red-600">{subtitle}</p>
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+        <p className="mb-2 text-sm font-medium text-red-600 uppercase tracking-wider">
+          {subtitle}
+        </p>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-slate-900 leading-tight">
           {title}
         </h1>
-        <p className="mt-4 text-lg text-slate-600 max-w-4xl">{description}</p>
+        <p className="mt-4 text-base md:text-lg text-slate-600 max-w-4xl leading-relaxed">
+          {description}
+        </p>
       </header>
 
       {/* 2. Feature Image */}
-      <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-xl">
+      <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden shadow-lg">
         <Image
-          src="/images/feature-img.png" // Replace with a high-quality photo of road construction in Nigeria
+          src="/images/feature-img.png"
           alt="Large scale road construction project by Sprint G.S."
           fill
-          className="object-cover"
+          className="object-cover hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent"></div>
       </div>
 
       {/* 3. Our Process Section */}
       <div>
-        <h2 className="text-3xl font-bold text-slate-900 mb-8 border-b-4 border-red-500 pb-2 inline-block">
+        <h2 className="text-2xl md:text-3xl font-light text-slate-900 mb-6 pb-3 border-b border-slate-200">
           Our Road Construction Process
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {serviceSections.map((section, index) => {
-            const Icon = section.icon; // Get the component reference
+            const Icon = section.icon;
             return (
               <div
                 key={index}
-                className="flex items-start gap-6 p-6 bg-slate-50/70 rounded-xl border border-slate-200">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 text-blue-800 rounded-lg flex items-center justify-center">
+                className="flex items-start gap-4 p-6 bg-slate-50 rounded-xl border border-slate-100 hover:shadow-md hover:border-slate-200 transition-all duration-300 group"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-800 to-blue-900 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-800 mb-1">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-2">
                     {section.title}
                   </h3>
-                  <p className="text-slate-600">{section.content}</p>
+                  <p className="text-sm text-slate-600 leading-relaxed">
+                    {section.content}
+                  </p>
                 </div>
               </div>
             );
@@ -116,7 +120,7 @@ export default function RoadConstructionPage() {
 
       {/* 4. Quality Materials & Equipment Gallery */}
       <div>
-        <h2 className="text-3xl font-bold text-slate-900 mb-8 border-b-4 border-red-500 pb-2 inline-block">
+        <h2 className="text-2xl md:text-3xl font-light text-slate-900 mb-6 pb-3 border-b border-slate-200">
           Quality Materials & Equipment
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -125,7 +129,8 @@ export default function RoadConstructionPage() {
             return (
               <div
                 key={item.label}
-                className="group relative w-full h-64 rounded-xl overflow-hidden shadow-lg">
+                className="group relative w-full h-64 rounded-xl overflow-hidden shadow-lg"
+              >
                 <Image
                   src={item.image}
                   alt={item.label}
@@ -134,10 +139,10 @@ export default function RoadConstructionPage() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <div className="w-12 h-12 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-lg mb-2">
-                    <Icon className="w-6 h-6" />
+                  <div className="w-10 h-10 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-lg mb-2">
+                    <Icon className="w-5 h-5" />
                   </div>
-                  <h4 className="text-lg font-bold">{item.label}</h4>
+                  <h4 className="text-base font-semibold">{item.label}</h4>
                 </div>
               </div>
             );
